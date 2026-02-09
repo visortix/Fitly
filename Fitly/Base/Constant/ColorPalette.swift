@@ -7,12 +7,7 @@
 
 import SwiftUI
 
-struct ColorPalette: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct ColorPalette {
+    static var training = Color("FFAB0F")
 }
 
-#Preview {
-    ColorPalette()
-}

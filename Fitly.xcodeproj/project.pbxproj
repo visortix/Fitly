@@ -6,13 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D60FE5C32F3A784E004CBCE6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D60FE5C22F3A784D004CBCE6 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		D60FE5C22F3A784D004CBCE6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D62275182F38FA3C00305407 /* Fitly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D62275412F395EB900305407 /* Exceptions for "Fitly" folder in "Fitly" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D62275172F38FA3C00305407 /* Fitly */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D622751A2F38FA3C00305407 /* Fitly */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D62275412F395EB900305407 /* Exceptions for "Fitly" folder in "Fitly" target */,
+			);
 			path = Fitly;
 			sourceTree = "<group>";
 		};
@@ -34,6 +52,7 @@
 			children = (
 				D622751A2F38FA3C00305407 /* Fitly */,
 				D62275192F38FA3C00305407 /* Products */,
+				D60FE5C22F3A784D004CBCE6 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60FE5C32F3A784E004CBCE6 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +276,7 @@
 				DEVELOPMENT_TEAM = 3Z49445F82;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fitly/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +309,7 @@
 				DEVELOPMENT_TEAM = 3Z49445F82;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fitly/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

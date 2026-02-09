@@ -7,12 +7,21 @@
 
 import SwiftUI
 
-struct Wave: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct Wave: Shape {
+    
+    func path(in rect: CGRect) -> Path {
+        
+        Path { path in
+            
+            path.move(to: CGPoint(x: rect.minX, y: rect.midY))
+            
+            path.addQuadCurve(
+                to: CGPoint(x: rect.midX, y: rect.midY),
+                control: CGPoint(x: rect.width * 0.25, y: rect.height * 0.2))
+            
+            path.addQuadCurve(
+                to: CGPoint(x: rect.maxX, y: rect.midY),
+                control: CGPoint(x: rect.width * 0.75, y: rect.height * 0.8))
+        }
     }
-}
-
-#Preview {
-    Wave()
 }
