@@ -9,4 +9,5 @@ import CoreGraphics
 
 struct Spacing {
     static let main: CGFloat = Gap.main
+    static let helperTextBlock: CGFloat = 23
 }
