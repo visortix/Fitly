@@ -8,13 +8,7 @@
 import Foundation
 
 extension Date {
-    func dayNumberOfWeek() -> Int? {
-        Calendar.current.dateComponents([.weekday], from: self).weekday
-    }
-}
-
-extension Date {
-    func dayOfWeek() -> String? {
+    var dayOfWeek: String? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE"
         return dateFormatter.string(from: self).lowercased()

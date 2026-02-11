@@ -13,7 +13,7 @@ struct WaveView: View {
     let color: Color
     let lineWidth: CGFloat
     
-    init(pixelsPerWave: Int = 1,
+    init(pixelsPerWave: Int = 3,
          color: Color = ColorPalette.training,
          lineWidth: CGFloat = 5,
     ) {

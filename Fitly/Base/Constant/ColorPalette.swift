@@ -8,6 +8,6 @@
 import SwiftUI
 
 struct ColorPalette {
-    static var training = Color("FFAB0F")
+    static let training = Color("FFAB0F")
 }
 

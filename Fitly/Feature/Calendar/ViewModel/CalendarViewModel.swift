@@ -10,17 +10,11 @@ import SwiftUI
 @Observable class CalendarViewModel {
     
     var calendar = WeekCalendar.init()
-    
-    func represent(day: DayOfWeek) -> String {
-        let day = day.rawValue
-        let string = isFirstCalendarDay(day: day) ? day : String(day.first ?? "⚠️")
-        
-        return string.capitalized
-    }
+
     
     func update() {
         
-        let currentDay = Date().dayOfWeek()
+        let currentDay = Date.now.dayOfWeek
         
         if let currentDay {
             while !isFirstCalendarDay(day: currentDay) {
@@ -38,14 +32,6 @@ import SwiftUI
             return day == firstCalendarDay
         }
         return false
-    }
-    
-    func isFirstCalendarDay(day: DayOfWeek) -> Bool {
-        isFirstCalendarDay(day: day.rawValue)
-    }
-    
-    func isTrainingDay(day: DayOfWeek) -> Bool {
-        trainingDays.contains(day)
     }
 }
 
